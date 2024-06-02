@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+    <link href="dist/output.css" rel="stylesheet">
+    <link rel="icon" href="img/icon.png">
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            const message = document.getElementById('message').value;
+            alert(`Pesan Anda: ${message}`);
+        }
+    </script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+    <div class="flex">
+        <!-- Sidebar -->
+        <aside class="w-64 h-screen bg-blue-800 text-white sticky top-0">
+            <div class="p-6">
+                <h1 class="text-2xl font-bold mb-4">News App</h1>
+                <nav>
+                    <ul>
+                        <li class="mb-4">
+                            <a href="index.html" class="block p-2 hover:bg-blue-600 rounded">Home</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="world.html" class="block p-2 hover:bg-blue-600 rounded">World</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="technology.html" class="block p-2 hover:bg-blue-600 rounded">Technology</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="sport.html" class="block p-2 hover:bg-blue-600 rounded">Sports</a>
+                        </li>
+                    </ul>
+                </nav>
+                <form onsubmit="handleSubmit(event)" class="mt-8">
+                    <label for="message" class="block text-sm mb-2">Pesan:</label>
+                    <textarea id="message" class="w-full p-2 text-gray-900 rounded mb-4" rows="4"></textarea>
+                    <button type="submit" class="w-full p-2 bg-green-500 hover:bg-green-700 rounded text-white">Kirim</button>
+                </form>
+                <div class="mt-8 flex space-x-4">
+                    <a href="https://www.instagram.com/yafidaffaaa/" target="_blank" class="text-white hover:text-gray-400">
+                        <img src="img/instagram.png" alt="Instagram" class="w-8 h-8">
+                    </a>
+                    <a href="https://github.com/yafidaffaa" target="_blank" class="text-white hover:text-gray-400">
+                        <img src="img/github.png" alt="GitHub" class="w-8 h-8">
+                    </a>
+                    <a href="https://www.linkedin.com/in/yafi-daffa-a-649242232/" target="_blank" class="text-white hover:text-gray-400">
+                        <img src="img/linkdin.png" alt="LinkedIn" class="w-8 h-8">
+                    </a>
+                    
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-8 overflow-y-auto h-screen">
+            <header class="mb-8">
+                <h2 class="text-3xl font-semibold">Sports News</h2>
+            </header>
+            <section>
+                <article class="mb-6 p-4 bg-white rounded shadow">
+                    <h3 class="text-2xl font-semibold mb-2">Latest News Headline</h3>
+                    <img src="https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/68/2024/01/26/26-timnas-738962185.jpg" alt="News Image" class="w-full h-auto mb-4 rounded">
+                    <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+                </article>
+                <article class="mb-6 p-4 bg-white rounded shadow">
+                    <h3 class="text-2xl font-semibold mb-2">Another News Headline</h3>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTta9bdJZQt6PzBangyPbFPy0c0gGuyzkPuhw&s" alt="News Image" class="w-full h-auto mb-4 rounded">
+                    <p class="text-gray-700">Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                </article>
+                <article class="mb-6 p-4 bg-white rounded shadow">
+                    <h3 class="text-2xl font-semibold mb-2">More News</h3>
+                    <img src="https://i.ytimg.com/vi/OgxF2k8et90/hqdefault.jpg" alt="News Image" class="w-full h-auto mb-4 rounded">
+                    <p class="text-gray-700">Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed sit amet quam venenatis, aliquet ipsum sed, lacinia est.</p>
+                </article>
+                <article class="mb-6 p-4 bg-white rounded shadow">
+                    <h3 class="text-2xl font-semibold mb-2">Additional News Headline</h3>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmyTc5brCRUbeAzlJm3R7-ce1l9m5L7N1EMQ&s" alt="News Image" class="w-full h-auto mb-4 rounded">
+                    <p class="text-gray-700">Cras non placerat mi. Etiam non tellus sed dolor pretium convallis. Proin faucibus arcu quis ante dignissim vehicula. Integer semper, nisl nec bibendum cursus, libero eros vestibulum orci, sit amet scelerisque ligula ante ut mi.</p>
+                </article>
+                <article class="mb-6 p-4 bg-white rounded shadow">
+                    <h3 class="text-2xl font-semibold mb-2">More Latest News</h3>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKEYjs4LIdKSL8PEW0NI0RKPCp0SI4yoBmvg&s" alt="News Image" class="w-full h-auto mb-4 rounded">
+                    <p class="text-gray-700">Curabitur bibendum metus nec auctor pulvinar. Duis et massa eu arcu dapibus posuere. Nulla facilisi. Ut sed sapien urna. Mauris luctus lacinia eros, at vulputate ligula pretium vel.</p>
+                </article>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
